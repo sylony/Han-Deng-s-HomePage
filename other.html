@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Han Deng" />
+    <title>Document</title>
+    <!-- import less -->
+    <link rel="stylesheet/less" type="text/css" href="/style/style.less" />
+    <!-- import less.js -->
+    <script src="node_modules/less/dist/less.min.js"></script>
+    <!-- import icon -->
+    <script src="js/iconfont.js"></script>
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- background -->
+    <div class="globe-bg"></div>
+    <!-- header-blur -->
+    <div class="header-blur"></div>
+    <!-- homepage -->
+    <!-- header and nav -->
+    <header>
+      <div class="in-container">
+        <h1 class="logo-text">Han Deng</h1>
+        <nav class="top-nav">
+          <ul class="top-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about" class="smooth-scroll">About</a></li>
+            <li><a href="#experience" class="smooth-scroll">Experience</a></li>
+            <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- body -->
+    <div class="main">
+      <!-- introduction -->
+      <div class="page page-intro" id="about">
+        <section class="page-title">
+          <h2 class="page-title-main">About Me</h2>
+          <section class="page-title-subtitle">My Introduction</section>
+        </section>
+        <div class="page-intro-wrapper">
+          <div class="left-img">
+            <img
+              src="images/photo2.JPG"
+              alt="personal photo"
+            />
+          </div>
+          <div class="right-content">
+            <section class="content-intro">
+              I am a student
+          </div>
+        </div>
+      </div>
+
+      <!-- personal experience -->
+      <div class="page page-resume" id="experience">
+        <section class="page-title">
+          <h2 class="page-title-main">My Experience</h2>
+          <section class="page-title-subtitle">What Did I Do</section>
+        </section>
+        <!-- personal experience change -->
+        <div class="resume-change-list">
+          <div class="resume-change-item active" data-type="work">
+          </div>
+        </div>
+        <div class="resume-tree">
+          <div class="tree-node-list" id="resume_nodeList">
+            <div class="tree-node-item">
+              <div class="content-wrapper">
+                <h3>student</h3>
+                <section>University</section>
+                <section class="work-time">2000 - 2000</section>
+              </div>
+            </div>
+            <div class="tree-node-item">
+              <div class="content-wrapper">
+                <h3>Frontend Developer</h3>
+                <section>Company</section>
+                <section class="work-time">2000 - 2000</section>
+              </div>
+            </div>
+            <div class="tree-node-item">
+              <div class="content-wrapper">
+                <h3>Frontend Developer</h3>
+                <section>Company</section>
+                <section class="work-time">2000 - 2000</section>
+              </div>
+            </div>
+            <div class="tree-node-item">
+              <div class="content-wrapper">
+                <h3>Frontend Developer</h3>
+                <section>Company</section>
+                <section class="work-time">2000 - 2000</section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact -->
+      <div class="page page-contact" id="contact">
+        <!-- title -->
+        <section class="page-title">
+          <h2 class="page-title-main">Get In Touch</h2>
+          <section class="page-title-subtitle">Contact Information</section>
+        </section>
+        <div class="contact-info">
+          <!-- personal info -->
+          <div class="info-left">
+            <div class="info-left-item">
+              <div class="info-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-phone-line"></use>
+                </svg>
+              </div>
+              <div class="info-content">
+                <h3>Phone</h3>
+                <section>+1(415) 123 1234</section>
+              </div>
+            </div>
+            <div class="info-left-item">
+              <div class="info-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-mail-line"></use>
+                </svg>
+              </div>
+              <div class="info-content">
+                <h3>Email</h3>
+                <section>deng.han1@northeastern.edu</section>
+              </div>
+            </div>
+            <div class="info-left-item">
+              <div class="info-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-user-location-line"></use>
+                </svg>
+              </div>
+              <div class="info-content">
+                <h3>Location</h3>
+                <section>San Francisco, CA</section>
+              </div>
+            </div>
+          </div>
+          <!-- right form -->
+          <div class="info-right">
+            <form action="">
+              <div class="name-and-email">
+                <div class="form-item">
+                  <label for="name">Please enter your name</label>
+                  <input type="text" />
+                </div>
+                <div class="form-item">
+                  <label for="email">Please enter your email</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="message">Please leave message here</label>
+                <textarea name="" id="" cols="20" rows="4" placeholder=""></textarea>
+              </div>
+              <div>
+                <button class="btn">
+                  Send
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-pushguanli"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js" type="module"></script>
+</html>

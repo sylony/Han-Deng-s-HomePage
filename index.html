@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Han Deng" />
+    <title>Document</title>
+    <!-- import less -->
+    <link rel="stylesheet/less" type="text/css" href="/style/style.less" />
+    <!-- import less.js -->
+    <script src="node_modules/less/dist/less.min.js"></script>
+    <!-- import icon -->
+    <script src="js/iconfont.js"></script>
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- gradient background -->
+    <div class="globe-bg"></div>
+    <!-- header-blur -->
+    <div class="header-blur"></div>
+    <!-- personal homepage -->
+    <!-- header and navigation bar -->
+    <header>
+      <div class="in-container">
+        <h1 class="logo-text">Han Deng</h1>
+        <nav class="top-nav">
+          <ul class="top-nav-list">
+            <li><a href="#home" class="smooth-scroll">Home</a></li>
+            <li><a href="other.html#about">About</a></li>
+            <li><a href="other.html#experience">Experience</a></li>
+            <li><a href="other.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- body -->
+    <div class="main">
+      <!-- home -->
+      <div class="page page-home" id="home">
+        <div class="page-home-left">
+          <h2 class="page-home-title">Hi, I'am Han</h2>
+          <section class="page-home-work">From CHINA to USA,</section>
+          <section class="page-home-intro">A NEUer, A CS align student, Maybe a future software development engineer.</section>
+          <!-- contact -->
+          <button class="btn" onclick="location.href='other.html#contact'">
+            Contact me
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-send-plane-2-line"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="page-home-right">
+          <!-- personal photo -->
+          <img
+            src="./images/personalphoto.JPG"
+            alt="personal photo"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js" type="module"></script>
+</html>
