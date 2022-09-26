@@ -119,7 +119,7 @@ header .in-container .top-nav .top-nav-list li a.active {
 }
 .main .page {
   margin-top: 60px;
-  height: calc(40vh);
+  height: calc(100vh - 60px);
 }
 .main .page .page-title .page-title-main {
   font-size: 40px;
@@ -284,7 +284,7 @@ header .in-container .top-nav .top-nav-list li a.active {
   left: 200px;
   width: 2px;
   top: 20px;
-  height: calc(20%);
+  height: calc(100% - 80px);
   background-color: #878588;
 }
 .main .page-resume .resume-tree .tree-node-list .tree-node-item {
