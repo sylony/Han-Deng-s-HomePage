@@ -117,6 +117,10 @@ header .in-container .top-nav .top-nav-list li a.active {
 .btn:hover {
   background-color: #f979e0;
 }
+
+/* Code Review Comment: */
+/* Great use of (descriptive) classes to identify elements! */
+
 .main .page {
   margin-top: 60px;
   height: calc(100vh - 60px);
