@@ -13,3 +13,5 @@ You can run the webpage directly by https://sylony.github.io/
 you can also clone the repository and run it locally
 # Screenshot
 <img width="1438" alt="screenshot10 13 40" src="https://user-images.githubusercontent.com/91612382/192345031-c44dc797-713e-4e11-977a-ec15401c0643.png">
+# Presenration
+https://docs.google.com/presentation/d/1JoJIn0gsTQrYaBycM2pOEU2b0C-EzUgKFyLjhtywcBA/edit#slide=id.p
