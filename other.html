@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="/style/style.css" />
     <!-- import icon -->
     <script src="js/iconfont.js"></script>
-    <style type="text/css">
+    <style>
       .icon {
         width: 1em;
         height: 1em;
         vertical-align: -0.15em;
         fill: currentColor;
         overflow: hidden;
+      }
+      .h3{
+        font-size: 18px;
+        font-weight: 600;
       }
     </style>
   </head>
@@ -43,10 +47,10 @@
     <div class="main">
       <!-- introduction -->
       <div class="page page-intro" id="about">
-        <section class="page-title">
-          <h2 class="page-title-main">About Me</h2>
-          <section class="page-title-subtitle">My Introduction</section>
-        </section>
+        <div class="page-title">
+          <div class="page-title-main">About Me</div>
+          <div class="page-title-subtitle">My Introduction</div>
+        </div>
         <div class="page-intro-wrapper">
           <div class="left-img">
             <img
@@ -55,19 +59,21 @@
             />
           </div>
           <div class="right-content">
-            </section class="content-intro">
-              After finishing my bachelor degree of Management and Economics, 
-              I decided to pursue a Master degree in Computer Science at Northeastern University, 
+            <div class="content-intro" >
+              After finishing my bachelor degree of Management and Economics,
+              I decided to pursue a Master degree in Computer Science at Northeastern University,
               Now I have solid foundation in computer science, I am proficient in many languages such as python, java, C, R, HTML/CSS, javascript
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- personal experience -->
       <div class="page page-resume" id="experience">
-        <section class="page-title">
-          <h2 class="page-title-main">My Experience</h2>
-          <section class="page-title-subtitle">What Did I Do</section>
-        </section>
+        <div class="page-title">
+          <div class="page-title-main">My Experience</div>
+          <div class="page-title-subtitle">What Did I Do</div>
+        </div>
         <!-- personal experience change -->
         <div class="resume-change-list">
           <div class="resume-change-item active" data-type="work">
@@ -77,30 +83,30 @@
           <div class="tree-node-list" id="resume_nodeList">
             <div class="tree-node-item">
               <div class="content-wrapper">
-                <h3>IT Consulting Intern</h3>
-                <section>Deloitte Consulting LLP</section>
-                <section class="work-time">08/2019 - 03/2020</section>
+                <div class="h3">IT Consulting Intern</div>
+                <div>Deloitte Consulting LLP</div>
+                <div class="work-time">08/2019 - 03/2020</div>
               </div>
             </div>
             <div class="tree-node-item">
               <div class="content-wrapper">
-                <h3>AUTO Vertical Data Analysis Intern</h3>
-                <section>Nielson Holdings PLC</section>
-                <section class="work-time">07/2021 - 09/2021</section>
+                <div class="h3">AUTO Vertical Data Analysis Intern</div>
+                <div>Nielson Holdings PLC</div>
+                <div class="work-time">07/2021 - 09/2021</div>
               </div>
             </div>
             <div class="tree-node-item">
               <div class="content-wrapper">
-                <h3>Investment Banking Intern</h3>
-                <section>China Securities Co., Ltd</section>
-                <section class="work-time">11/2020 - 01/2021</section>
+                <div>Investment Banking Intern</div>
+                <div>China Securities Co., Ltd</div>
+                <div class="work-time">11/2020 - 01/2021</div>
               </div>
             </div>
             <div class="tree-node-item">
               <div class="content-wrapper">
-                <h3>Research Assistant</h3>
-                <section>Development and Reform Commission</section>
-                <section class="work-time">06/2020 - 08/2020</section>
+                <div>Research Assistant</div>
+                <div>Development and Reform Commission</div>
+                <div class="work-time">06/2020 - 08/2020</div>
               </div>
             </div>
           </div>
@@ -110,10 +116,10 @@
       <!-- contact -->
       <div class="page page-contact" id="contact">
         <!-- title -->
-        <section class="page-title">
-          <h2 class="page-title-main">Get In Touch</h2>
-          <section class="page-title-subtitle">Contact Information</section>
-        </section>
+        <div class="page-title">
+          <div class="page-title-main">Get In Touch</div>
+          <div class="page-title-subtitle">Contact Information</div>
+        </div>
         <div class="contact-info">
           <!-- personal info -->
           <div class="info-left">
@@ -124,8 +130,8 @@
                 </svg>
               </div>
               <div class="info-content">
-                <h3>Phone</h3>
-                <section>+1 (415) 123 1234</section>
+                <div class="h3">Phone</div>
+                <div>+1 (415) 123 1234</div>
               </div>
             </div>
             <div class="info-left-item">
@@ -135,8 +141,8 @@
                 </svg>
               </div>
               <div class="info-content">
-                <h3>Email</h3>
-                <section>deng.han1@northeastern.edu</section>
+                <div class="h3">Email</div>
+                <div>deng.han1@northeastern.edu</div>
               </div>
             </div>
             <div class="info-left-item">
@@ -146,27 +152,27 @@
                 </svg>
               </div>
               <div class="info-content">
-                <h3>Location</h3>
-                <section>San Francisco, CA</section>
+                <div class="h3">Location</div>
+                <div>San Francisco, CA</div>
               </div>
             </div>
           </div>
           <!-- right form -->
           <div class="info-right">
-            <form action="1">
+            <form>
               <div class="name-and-email">
                 <div class="form-item">
                   <label for="name">Please enter your name</label>
-                  <input id="name" />
+                  <input id="name" type="text" />
                 </div>
                 <div class="form-item">
                   <label for="email">Please enter your email</label>
-                  <input id="email" />
+                  <input id="email" type="text" />
                 </div>
               </div>
               <div class="form-item">
                 <label for="message">Please leave message here</label>
-                <textarea cols="20" rows="4" placeholder=""></textarea>
+                <textarea id="message" cols="20" rows="4"></textarea>
               </div>
               <div>
                 <button class="btn">
@@ -181,5 +187,6 @@
         </div>
       </div>
     </div>
-  </body><script src="index.js" type="module"></script>
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
